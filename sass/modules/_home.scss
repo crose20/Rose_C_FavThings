@@ -1,0 +1,72 @@
+
+* { border: 0; margin: 0; padding: 0; box-sizing: border-box; }
+html { position: relative; min-height: 100%; }
+
+body { 
+    background-color: $light-grey;
+    color: $black; 
+    font-size: 14px;
+    font-family: futura-pt, Futura, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: futura-pt, Futura, sans-serif;
+}
+
+main { 
+    text-align: center; 
+    margin-top: 40px;
+}
+
+
+#heroes { text-align: center; margin-top: 20px; }
+
+.hero-container { 
+    overflow: hidden; 
+    display: inline-block; 
+    text-align: center;
+    margin: 0 12px 20px;
+    border: 3px solid white;
+    background: $bg-color;
+
+    img { width: 100%; }
+
+    h3 { 
+        font-size: 28px; 
+        font-weight: 100;
+        padding: 8px;
+        color: $light-grey;
+    }
+}
+
+.hero-container:last-of-type { margin-bottom: 120px; }
+
+@media screen and (min-width: 1032px) {
+    .hero-container:last-of-type { margin-bottom: 20px; }
+}
+
+/* ------------------------------------ On individual bio pages ------------------------------------ */
+
+.bio-title {
+    color: $maroon;
+    margin-bottom: 15px;
+}
+
+#bio-img {
+    margin-bottom: 10px;
+}
+
+.bio-name {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.bio-data {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 14px;
+    line-height: 20px;
+}

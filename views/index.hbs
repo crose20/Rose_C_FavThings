@@ -1,0 +1,10 @@
+<section id="heros">
+    {{#each avatars}}
+        <div class="hero-container">
+            <a href="/{{name}}">
+                <img src="/images/{{avatar}}" alt="Favourite Thing">
+            </a>
+            <h3 class="hero-name">{{name}}</h3>
+        </div>
+    {{/each}}
+</section>
